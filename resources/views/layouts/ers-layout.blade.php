@@ -142,8 +142,8 @@
                     <li data-menu="" class="{{$path == 'vacancy/add' ? 'active':""}}">
                         <a class="dropdown-item" href="{{URL::to('vacancy/add')}}" data-toggle="dropdown"><i class="la la-angle-right"></i>New Vacancy</a>
                     </li>
-                    <li data-menu="" class="{{$path == 'vacancy' ? 'active':""}}">
-                        <a class="dropdown-item" href="{{URL::to('vacancy')}}" data-toggle="dropdown"><i class="la la-angle-right"></i>All Vacancy</a>
+                    <li data-menu="" class="{{$path == 'vacancies' ? 'active':""}}">
+                        <a class="dropdown-item" href="{{URL::to('vacancies')}}" data-toggle="dropdown"><i class="la la-angle-right"></i>All Vacancy</a>
                     </li>
                 </ul>
             </li>
@@ -151,6 +151,12 @@
                 <ul class="dropdown-menu">
                     <li data-menu="" class="{{$path == 'training/add' ? 'active':""}}">
                         <a class="dropdown-item" href="{{URL::to('training/add')}}" data-toggle="dropdown"><i class="la la-angle-right"></i>New Training</a>
+                    </li>
+                    <li data-menu="" class="{{$path == 'add/employee/training' ? 'active':""}}">
+                        <a class="dropdown-item" href="{{URL::to('add/employee/training')}}" data-toggle="dropdown"><i class="la la-angle-right"></i>Add Employee Training</a>
+                    </li>
+                    <li data-menu="" class="{{$path == 'employee/trainings' ? 'active':""}}">
+                        <a class="dropdown-item" href="{{URL::to('employee/trainings')}}" data-toggle="dropdown"><i class="la la-angle-right"></i>All Employee Trainings</a>
                     </li>
                     <li data-menu="" class="{{$path == 'trainings' ? 'active':""}}">
                         <a class="dropdown-item" href="{{URL::to('trainings')}}" data-toggle="dropdown"><i class="la la-angle-right"></i>All Trainings</a>
@@ -232,6 +238,8 @@
 <!-- END MODERN JS-->
 <!-- BEGIN PAGE LEVEL JS-->
 <script type="text/javascript" src="{{asset('app-assets/js/scripts/ui/breadcrumbs-with-stats.js')}}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <!-- END PAGE LEVEL JS-->
 
 @yield('footer')

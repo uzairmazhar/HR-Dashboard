@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Department extends Model
 {
     use HasFactory;
+//    public function vacancy(){
+//        return $this->hasOne('App\Vacancy');
+//    }
 }

@@ -5,10 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Grade extends Model
+class EmployeeTraining extends Model
 {
     use HasFactory;
-//    public function grade(){
-//        return $this->hasOne('App\Vacancies');
-//    }
+    protected $table_name = 'employee_trainings';
 }
